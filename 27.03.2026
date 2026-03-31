@@ -93,7 +93,7 @@ Gender
 Salary
 new.Salary=c()
 
-for (i in 1:5){
+for (i in 1:length(Gender)){
   if (Gender[i]=="f"){
     new.Salary [i]=Salary[i]*1.1
   }else {
