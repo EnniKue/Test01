@@ -88,3 +88,23 @@ Gender
 ## Consider Salary and Gender, add a bunus of 100/1000=0.1 Euros to the monthly salary
 #if the Gender ist Female
 
+
+Gender
+Salary
+new.Salary=c()
+
+for (i in 1:5){
+  if (Gender[i]=="f"){
+    new.Salary [i]=Salary[i]*1.1
+  }else {
+    new.Salary [i]=Salary[i]
+  }
+}
+new.Salary
+Gender
+
+dt2=data.frame(G=Gender, 
+               n.S=new.Salary)
+dt2
+
+View(dt2)
